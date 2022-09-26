@@ -3,6 +3,7 @@
 module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'ember-charts-demo',
+    podModulePrefix: 'ember-charts-demo/pods',
     environment,
     rootURL: '/',
     locationType: 'history',

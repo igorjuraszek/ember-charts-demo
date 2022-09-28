@@ -1,0 +1,7 @@
+{{page-title 'Cars'}}
+
+{{#each this.model.cars as |car|}}
+  <CarDetails @car={{car}} />
+{{/each}}
+
+{{outlet}}

@@ -1,2 +1,13 @@
-{{page-title "Machines"}}
-{{outlet}}
+{{page-title 'Machines'}}
+<button type='button' {{on 'click' this.onAddMachine}}>
+  Add Machine
+</button>
+{{#each this.model.machines as |machine|}}
+  <div>
+    <strong>{{machine.name}}
+      {{machine.location}}</strong>
+    {{#each machine.requests as |request|}}
+      <p>{{request.type}}</p>
+    {{/each}}
+  </div>
+{{/each}}

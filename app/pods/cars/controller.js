@@ -32,4 +32,12 @@ export default class CarsController extends Controller {
       labels: ['Available days', 'Unavailable days'],
     };
   }
+
+  get chartData() {
+    return null;
+  }
+
+  get chartOptions() {
+    return null;
+  }
 }

@@ -1,7 +1,24 @@
 {{page-title 'Cars'}}
 
-{{#each this.model.cars as |car|}}
+{{!-- {{#each this.model.cars as |car|}}
   <CarDetails @car={{car}} />
-{{/each}}
+{{/each}} --}}
+
+{{!-- {{ember-chart
+  type=CHARTTYPE
+  data=CHARTDATA
+  options=CHARTOPTIONS
+  width=CHARTWIDTH
+  height=CHARTHEIGHT
+  plugins=CHARTPLUGINS
+  customLegendElement=CUSTOMLEGENDELEMENT
+}} --}}
+
+<EmberChart
+  @type={{'pie'}}
+  @data={{this.dataCars}}
+  @width={{400}}
+  @height={{200}}
+/>
 
 {{outlet}}

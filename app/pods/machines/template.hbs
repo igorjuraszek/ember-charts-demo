@@ -1,4 +1,10 @@
 {{page-title 'Machines'}}
+<EmberChart
+  @type={{'pie'}}
+  @data={{this.data}}
+  @width={{400}}
+  @height={{200}}
+/>
 <button type='button' {{on 'click' this.onAddMachine}}>
   Add Machine
 </button>

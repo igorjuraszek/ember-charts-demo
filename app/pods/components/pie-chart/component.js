@@ -54,20 +54,4 @@ export default class PieChartComponent extends Component {
     };
     return data;
   }
-
-  get chartOptions() {
-    const options = {
-      scales: {
-        yAxes: [
-          {
-            ticks: {
-              min: 0,
-              max: 15,
-            },
-          },
-        ],
-      },
-    };
-    return options;
-  }
 }
